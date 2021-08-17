@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  min-height: 65px;
+}
+
+.header .logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: unset;
+}
+
+.header .logo:hover .logo_title1 {
+  color: brown;
+}
+
+.header .logo_img {
+  position: absolute;
+  width: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width:768px) {
+  .header .logo_img { width: 100px; }
+}
+
+.header .logo_title1 {
+  padding-left: 60px;
+  font-size: 20px;
+}
+@media screen and (min-width:768px) {
+  .header .logo_title1 {
+    padding-left: 90px;
+    font-size: 30px;
+  }
+}
